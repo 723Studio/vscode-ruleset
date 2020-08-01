@@ -194,6 +194,9 @@
         "psiUnlockResearch": {
           "type": "string"
         },
+        "fakeUnderwaterBaseUnlockResearch": {
+          "type": "string"
+        },
         "destroyedFacility": {
           "type": "string"
         },
@@ -205,6 +208,9 @@
         },
         "mana": {
           "$ref": "#/definitions/mana"
+        },
+        "health": {
+          "$ref": "#/definitions/health"
         },
         "unitResponseSounds": {
           "items": {
@@ -240,6 +246,9 @@
           "type": "boolean"
         },
         "buildInfiltrationBaseCloseToTheCountry": {
+          "type": "boolean"
+        },
+        "allowAlienBasesOnWrongTextures": {
           "type": "boolean"
         },
         "kneelBonusGlobal": {
@@ -379,6 +388,9 @@
         "shortRadarRange": {
           "type": "integer"
         },
+        "buildTimeReductionScaling": {
+          "type": "integer"
+        },
         "baseDefenseMapFromLocation": {
           "type": "integer"
         },
@@ -401,6 +413,9 @@
             }
           },
           "additionalProperties": false,
+          "type": "object"
+        },
+        "recommendedUserOptions": {
           "type": "object"
         },
         "fixedUserOptions": {
@@ -502,6 +517,9 @@
           "type": "object",
           "additionalProperties": false,
           "properties": {
+            "extendedMeleeReactions": {
+              "type": "integer"
+            },
             "extendedHwpLoadOrder": {
               "type": "boolean"
             },
@@ -565,11 +583,26 @@
             "trainingSecondary": {
               "type": "boolean"
             },
+            "woundThreshold": {
+              "type": "integer"
+            },
             "replenishAfterMission": {
               "type": "boolean"
             },
             "unlockResearch": {
               "type": "string"
+            }
+          }
+        },
+        "health": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "woundThreshold": {
+              "type": "integer"
+            },
+            "replenishAfterMission": {
+              "type": "boolean"
             }
           }
         },
@@ -605,6 +638,9 @@
               "type": "boolean"
             },
             "pickUpWeaponsMoreActively": {
+              "type": "boolean"
+            },
+            "pickUpWeaponsMoreActivelyCiv": {
               "type": "boolean"
             },
             "destroyBaseFacilities": {

@@ -70,6 +70,9 @@
       },
       "type": "array"
     },
+    "includeBonusesForMinStats": {
+      "type": "boolean"
+    },
     "requiredMinStats": {
       "$ref": "UnitStats.json"
     },
@@ -138,6 +141,9 @@
     },
     "upperBoundAtStatCaps": {
       "type": "boolean"
+    },
+    "upperBoundType": {
+      "type": "integer"
     },
     "reset": {
       "type": "boolean"

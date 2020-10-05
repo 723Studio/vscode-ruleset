@@ -21,6 +21,12 @@
         "alternativeDeployment": {
           "type": "string"
         },
+        "battleScript": {
+          "type": "string"
+        },
+        "extendedObjectiveType": {
+          "type": "string"
+        },
         "alternativeDeploymentResearch": {
           "type": "string"
         },

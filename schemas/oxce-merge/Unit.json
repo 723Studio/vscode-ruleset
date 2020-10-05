@@ -48,6 +48,12 @@
         "pickUpWeaponsMoreActively": {
           "type": "integer"
         },
+        "statsRandom": {
+          "$ref": "UnitStats.json"
+        },
+        "specialObjectiveType": {
+          "type": "string"
+        },
         "isLeeroyJenkins": {
           "type": "boolean"
         },

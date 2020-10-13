@@ -54,6 +54,9 @@
         "specialObjectiveType": {
           "type": "string"
         },
+        "altRecoveredUnit": {
+          "type": "string"
+        },
         "isLeeroyJenkins": {
           "type": "boolean"
         },

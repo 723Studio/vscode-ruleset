@@ -447,6 +447,12 @@
         "powerRangeThreshold": {
           "type": "number"
         },
+        "throwRange": {
+          "type": "integer"
+        },
+        "underwaterThrowRange": {
+          "type": "integer"
+        },
         "psiRequired": {
           "type": "boolean"
         },

@@ -94,6 +94,9 @@
     "timerRandom": {
       "type": "integer"
     },
+    "backgroundColor": {
+      "type": "integer"
+    },
     "removedCovertOperationsList": {
       "items": {
         "type": "string"

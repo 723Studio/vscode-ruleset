@@ -231,10 +231,30 @@
         "startingBaseSuperhuman": {
           "type": "object"
         },
+        "aimMultipliers": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 5
+        },
+        "armorMultipliers": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 5
+        },
         "maxViewDistance": {
           "type": "integer"
         },
         "maxDarknessToSeeUnits": {
+          "type": "integer"
+        },
+        "hireByCountryOdds": {
+          "type": "integer"
+        },
+        "hireByRegionOdds": {
           "type": "integer"
         },
         "costHireEngineer": {
@@ -257,6 +277,18 @@
         },
         "hireEngineersUnlockResearch": {
           "type": "string"
+        },
+        "hireScientistsRequiresBaseFunc": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "hireEngineersRequiresBaseFunc": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
         },
         "destroyedFacility": {
           "type": "string"
@@ -473,8 +505,8 @@
         "hidePediaInfoButton": {
           "type": "boolean"
         },
-        "extraNerdyPediaInfo": {
-          "type": "boolean"
+        "extraNerdyPediaInfoType": {
+          "type": "integer"
         },
         "giveScoreAlsoForResearchedArtifacts": {
           "type": "boolean"

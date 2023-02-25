@@ -34,6 +34,12 @@
       },
       "type": "array"
     },
+    "forbiddenArmorsInNextStage": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
     "allowedVehicles": {
       "items": {
         "type": "string"
@@ -99,6 +105,15 @@
         "type": "integer"
       },
       "type": "object"
+    },
+    "craftTransformations": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "type": "object"
+    },
+    "requireCommanderOnboard": {
+      "type": "boolean"
     },
     "destroyRequiredItems": {
       "type": "boolean"

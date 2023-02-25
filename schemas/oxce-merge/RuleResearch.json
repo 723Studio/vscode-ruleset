@@ -39,6 +39,18 @@
           },
           "type": "array"
         },
+        "decreaseCounter": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "increaseCounter": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
         "requiresBaseFunc": {
           "items": {
             "type": "string"

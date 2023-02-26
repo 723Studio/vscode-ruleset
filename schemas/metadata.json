@@ -13,6 +13,9 @@
     "version": {
       "type": "string"
     },
+    "versionDisplay": {
+      "type": "string"
+    },
     "author": {
       "type": "string"
     },

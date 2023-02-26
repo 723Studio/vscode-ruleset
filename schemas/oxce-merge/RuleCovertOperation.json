@@ -13,6 +13,19 @@
       "description": {
         "type": "string"
       },
+      "categories": {
+        "items": {
+          "type": "string",
+          "enum": ["STR_INVESTIGATION", "STR_INFILTRATION", "STR_NEGOTIATION", "STR_DECEPTION", "STR_ENGINEERING", "STR_SCIENCE"]
+        },
+        "type": "array"
+      },
+      "soldiersMin": {
+        "type": "integer"
+      },
+      "soldiersMax": {
+        "type": "integer"
+      },
       "successBackground": {
         "type": "string"
       },
@@ -54,27 +67,6 @@
           "type": "string"
         },
         "type": "array"
-      },
-      "soldierSlots": {
-        "type": "integer"
-      },
-      "optionalSoldierSlots": {
-        "type": "integer"
-      },
-      "scientistSlots": {
-        "type": "integer"
-      },
-      "engineerSlots": {
-        "type": "integer"
-      },
-      "optionalSoldierEffect": {
-        "type": "integer"
-      },
-      "scientistEffect": {
-        "type": "integer"
-      },
-      "engineerEffect": {
-        "type": "integer"
       },
       "baseChances": {
         "type": "integer"

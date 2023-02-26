@@ -10,6 +10,9 @@
       "name": {
         "type": "string"
       },
+      "nameUc": {
+        "type": "string"
+      },
       "description": {
         "type": "string"
       },

@@ -27,6 +27,12 @@
         "hidden": {
           "type": "boolean"
         },
+        "stats": {
+          "$ref": "UnitStats.json"
+        },
+        "funds": {
+          "type": "integer"
+        },
         "disables": {
           "items": {
             "type": "string"

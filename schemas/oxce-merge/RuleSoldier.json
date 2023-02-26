@@ -96,6 +96,60 @@
           },
           "type": "array"
         },
+        "roles": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "pilotRankSprite": {
+          "$ref": "ModOffset.json"
+        },
+        "pilotRankSpriteBattlescape": {
+          "$ref": "ModOffset.json"
+        },
+        "pilotRankSpriteTiny": {
+          "$ref": "ModOffset.json"
+        },
+        "agentRankSprite": {
+          "$ref": "ModOffset.json"
+        },
+        "agentRankSpriteBattlescape": {
+          "$ref": "ModOffset.json"
+        },
+        "agentRankSpriteTiny": {
+          "$ref": "ModOffset.json"
+        },
+        "scientistRankSprite": {
+          "$ref": "ModOffset.json"
+        },
+        "scientistRankSpriteBattlescape": {
+          "$ref": "ModOffset.json"
+        },
+        "scientistRankSpriteTiny": {
+          "$ref": "ModOffset.json"
+        },
+        "engineerRankSprite": {
+          "$ref": "ModOffset.json"
+        },
+        "engineerRankSpriteBattlescape": {
+          "$ref": "ModOffset.json"
+        },
+        "engineerRankSpriteTiny": {
+          "$ref": "ModOffset.json"
+        },
+        "roleExpRequirments": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "roleRankStrings": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array"
+        },
         "panicMale": {
           "$ref": "ModOffset.json#/definitions/List"
         },

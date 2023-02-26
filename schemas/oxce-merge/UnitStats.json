@@ -8,6 +8,114 @@
       "properties": {
         "mana": {
           "type": "integer"
+        },
+        "maneuvering": {
+          "type": "integer"
+        },
+        "missiles": {
+          "type": "integer"
+        },
+        "dogfight": {
+          "type": "integer"
+        },
+        "tracking": {
+          "type": "integer"
+        },
+        "cooperation": {
+          "type": "integer"
+        },
+        "beams": {
+          "type": "integer"
+        },
+        "synaptic": {
+          "type": "integer"
+        },
+        "gravity": {
+          "type": "integer"
+        },
+        "stealth": {
+          "type": "integer"
+        },
+        "perseption": {
+          "type": "integer"
+        },
+        "charisma": {
+          "type": "integer"
+        },
+        "investigation": {
+          "type": "integer"
+        },
+        "deception": {
+          "type": "integer"
+        },
+        "interrogation": {
+          "type": "integer"
+        },
+        "physics": {
+          "type": "integer"
+        },
+        "chemistry": {
+          "type": "integer"
+        },
+        "biology": {
+          "type": "integer"
+        },
+        "insight": {
+          "type": "integer"
+        },
+        "data": {
+          "type": "integer"
+        },
+        "computers": {
+          "type": "integer"
+        },
+        "tactics": {
+          "type": "integer"
+        },
+        "materials": {
+          "type": "integer"
+        },
+        "designing": {
+          "type": "integer"
+        },
+        "psionics": {
+          "type": "integer"
+        },
+        "xenolinguistics": {
+          "type": "integer"
+        },
+        "weaponry": {
+          "type": "integer"
+        },
+        "explosives": {
+          "type": "integer"
+        },
+        "efficiency": {
+          "type": "integer"
+        },
+        "microelectronics": {
+          "type": "integer"
+        },
+        "metallurgy": {
+          "type": "integer"
+        },
+        "processing": {
+          "type": "integer"
+        },
+        "hacking": {
+          "type": "integer"
+        },
+        "construction": {
+          "type": "integer"
+        },
+        "diligence": {
+          "type": "integer"
+        },
+        "alienTech": {
+          "type": "integer"
+        },
+        "reverseEngineering": {
+          "type": "integer"
         }
       }
     }

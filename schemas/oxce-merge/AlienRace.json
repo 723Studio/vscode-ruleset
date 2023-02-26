@@ -32,6 +32,11 @@
         },
         "retaliationAggression": {
           "type": "integer"
+        },
+        "raceType": {
+          "type": "integer",
+          "minimum": -1,
+          "maximum": 2
         }
       }
     }

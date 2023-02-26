@@ -85,6 +85,12 @@
     "minRank": {
       "type": "integer"
     },
+    "roleRankRequirements": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "type": "object"
+    },
     "requiredItems": {
       "additionalProperties": {
         "type": "integer"

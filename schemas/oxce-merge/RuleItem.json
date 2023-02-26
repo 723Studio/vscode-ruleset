@@ -197,6 +197,18 @@
         "missionObjective": {
           "type": "boolean"
         },
+        "hackingHp": {
+          "type": "integer"
+        },
+        "hackingTu": {
+          "type": "integer"
+        },
+        "samplingPower": {
+          "type": "integer"
+        },
+        "extendedItemReloadCostLocal": {
+          "type": "integer"
+        },
         "inventoryMoveCost": {
           "$ref": "#/definitions/RuleInventoryMoveCost"
         },

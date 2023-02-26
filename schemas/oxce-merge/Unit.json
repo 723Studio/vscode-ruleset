@@ -72,6 +72,15 @@
         "altRecoveredUnit": {
           "type": "string"
         },
+        "prisoner": {
+          "type": "string"
+        },
+        "roles": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
         "isLeeroyJenkins": {
           "type": "boolean"
         },

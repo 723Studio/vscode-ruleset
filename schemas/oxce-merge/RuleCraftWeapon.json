@@ -18,6 +18,9 @@
         "weaponType": {
           "type": "integer"
         },
+        "projectileSubType": {
+          "type": "integer"
+        },
         "hidePediaInfo": {
           "type": "boolean"
         },

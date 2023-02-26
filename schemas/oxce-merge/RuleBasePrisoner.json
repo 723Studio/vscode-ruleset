@@ -1,0 +1,101 @@
+{
+    "$id": "https://openxcom.org/schemas/oxce/RuleBasePrisoner.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "type",
+      "interrogation",
+      "torture",
+      "recruiting"
+    ],
+    "properties": {
+      "refNode": {
+        "$ref": "RuleBasePrisoner.json"
+      },
+      "type": {
+        "type": "string"
+      },
+      "startingCooperation": {
+        "type": "integer"
+      },
+      "damageOverTime": {
+        "type": "integer"
+      },
+      "interrogation": {
+        "type": "object",
+        "properties": {
+            "unlockResearches": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "requiredResearch": {
+                "type": "string"
+            },
+            "diesAfter": {
+                "type": "boolean"
+            },
+            "baseResistance": {
+                "type": "integer"
+            }
+        }
+      },
+      "torture": {
+        "type": "object",
+        "properties": {
+            "difficulty": {
+                "type": "integer"
+            },
+            "loyaltyChange": {
+                "type": "integer"
+            },
+            "moraleChange": {
+                "type": "integer"
+            },
+            "cooperationChange": {
+                "type": "integer"
+            },
+            "spawnEvent": {
+                "type": "string"
+            },
+            "eventChance": {
+                "type": "integer"
+            }
+        }
+      },
+      "contain": {
+        "type": "object",
+        "properties": {
+            "requiredResearch": {
+                "type": "string"
+            },
+            "funds": {
+                "type": "integer"
+            },
+            "cooperationChange": {
+                "type": "integer"
+            }
+        }
+      },
+      "recruiting": {
+        "type": "object",
+        "properties": {
+            "requiredResearch": {
+                "type": "string"
+            },
+            "spawnedSoldierRule": {
+                "type": "string"
+            },
+            "difficulty": {
+                "type": "integer"
+            },
+            "spawnEvent": {
+                "type": "string"
+            }
+        }
+      }
+    }
+  }
+  

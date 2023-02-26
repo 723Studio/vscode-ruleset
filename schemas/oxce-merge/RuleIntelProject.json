@@ -1,0 +1,82 @@
+{
+    "$id": "https://openxcom.org/schemas/oxce/RuleIntelProject.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "name"
+    ],
+    "properties": {
+      "refNode": {
+        "$ref": "RuleIntelProject.json"
+      },
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "cost": {
+        "type": "integer"
+      },
+      "costIncrease": {
+        "type": "integer"
+      },
+      "requiredResearch": {
+        "type": "string"
+      },
+      "specialRule": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 3
+      },
+      "stats": {
+        "$ref": "UnitStats.json"
+      },
+      "listOrder": {
+        "type": "integer"
+      },
+      "stages": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "stageName": {
+                    "type" :"string"
+                },
+                "odds": {
+                    "type": "integer"
+                },
+                "requireRolls": {
+                    "type": "integer"
+                },
+                "requiredResearch": {
+                    "type": "string"
+                },
+                "disabledByResearch": {
+                    "type": "string"
+                },
+                "requiresBaseFunc": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "eventScripts": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "spawnMission": {
+                    "type": "string"
+                },
+                "finalStage": {
+                    "type": "boolean"
+                }
+            }
+        }
+      }
+    }
+}
+  

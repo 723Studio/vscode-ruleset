@@ -27,6 +27,15 @@
             "type": "array"
           },
           "type": "object"
+        },
+        "objects": {
+          "additionalProperties": {
+            "items": {
+              "$ref": "Position.json"
+            },
+            "type": "array"
+          },
+          "type": "object"
         }
       },
       "definitions": {

@@ -81,6 +81,12 @@
         "rightClickActionType": {
           "type": "integer"
         },
+        "interrogationSpace": {
+          "type": "integer"
+        },
+        "globalRadar": {
+          "type": "boolean"
+        },
         "buildCostItems": {
           "type": "object",
           "additionalProperties": {

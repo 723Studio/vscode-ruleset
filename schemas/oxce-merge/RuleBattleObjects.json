@@ -1,0 +1,39 @@
+{
+    "$id": "https://openxcom.org/schemas/oxce/RuleBattleObjects.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "type"
+    ],
+    "properties": {
+      "refNode": {
+        "$ref": "RuleBattleObjects.json"
+      },
+      "type": {
+        "type": "string"
+      },
+      "hackingDefence": {
+        "type": "integer"
+      },
+      "alterationMCDNumber": {
+        "type": "integer"
+      },
+      "alterationMCDRadius": {
+        "type": "integer"
+      },
+      "samplingDefence": {
+        "type": "integer"
+      },
+      "spawnedItem": {
+        "type": "string"
+      },
+      "spawnedEvents": {
+        "type": "array",
+        "items": {
+            "type": "string"
+        }
+      }
+    }
+  }
+  

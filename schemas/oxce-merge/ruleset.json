@@ -122,6 +122,45 @@
             ]
           }
         },
+        "prisoners": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/definitions/delete"
+              },
+              {
+                "$ref": "RuleBasePrisoner.json"
+              }
+            ]
+          }
+        },
+        "objects": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/definitions/delete"
+              },
+              {
+                "$ref": "RuleBattleObjects.json"
+              }
+            ]
+          }
+        },
+        "intelligence": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/definitions/delete"
+              },
+              {
+                "$ref": "RuleIntelProject.json"
+              }
+            ]
+          }
+        },
         "startingConditions": {
           "type": "array",
           "items": {
@@ -266,6 +305,21 @@
         "psiUnlockResearch": {
           "type": "string"
         },
+        "alienTechUnlockResearch": {
+          "type": "string"
+        },
+        "xenologyUnlockResearch": {
+          "type": "string"
+        },
+        "craftsBeamUnlockResearch": {
+          "type": "string"
+        },
+        "craftSynapseUnlockResearch": {
+          "type": "string"
+        },
+        "craftGravControlUnlockResearch": {
+          "type": "string"
+        },
         "fakeUnderwaterBaseUnlockResearch": {
           "type": "string"
         },
@@ -401,6 +455,24 @@
         "noLOSAccuracyPenaltyGlobal": {
           "type": "integer"
         },
+        "hackingBaseTuCost": {
+          "type": "integer"
+        },
+        "hackingFirewallBaseTuCost": {
+          "type": "integer"
+        },
+        "hackingFirewallBaseHpCost": {
+          "type": "integer"
+        },
+        "hackingStatToTuCoef": {
+          "type": "integer"
+        },
+        "hackingStatToHpCoef": {
+          "type": "integer"
+        },
+        "visibilityStatsMod": {
+          "type": "integer"
+        },
         "surrenderMode": {
           "type": "integer"
         },
@@ -471,7 +543,19 @@
         "pilotReactionsZeroPoint": {
           "type": "integer"
         },
-        "pilotReactionsRange": {
+        "pilotTrackingZeroPoint": {
+          "type": "integer"
+        },
+        "pilotTrackingRange": {
+          "type": "integer"
+        },
+        "pilotTacticsZeroPoint": {
+          "type": "integer"
+        },
+        "covertOpsExperienceFactor": {
+          "type": "integer"
+        },
+        "covertOpsIntelBonusFactor": {
           "type": "integer"
         },
         "pilotBraveryThresholds": {

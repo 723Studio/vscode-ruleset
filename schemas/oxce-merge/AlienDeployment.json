@@ -105,6 +105,12 @@
         "extendedObjectiveType": {
           "type": "string"
         },
+        "undercoverArmors": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
         "alternativeDeploymentResearch": {
           "type": "string"
         },

@@ -60,6 +60,9 @@
             "spawnEvent": {
                 "type": "string"
             },
+            "eventWeights": {
+                "$ref": "WeightedOptions.json#/definitions/Map"
+              },
             "eventChance": {
                 "type": "integer"
             }

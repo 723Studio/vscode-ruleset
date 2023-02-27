@@ -28,6 +28,9 @@
       "spawnedItem": {
         "type": "string"
       },
+      "eventWeights": {
+        "$ref": "WeightedOptions.json#/definitions/Map"
+      },
       "spawnedEvents": {
         "type": "array",
         "items": {

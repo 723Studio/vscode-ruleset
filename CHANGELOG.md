@@ -1,5 +1,5 @@
 # Change Log
-## [1.1.1]
+## [1.1.2]
 - Fix missing schema, merge upstream.
 ## [1.1.1]
 - Support of FTA 1.0.3 new ruleset schemas.

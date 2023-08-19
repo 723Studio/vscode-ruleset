@@ -42,6 +42,9 @@
         "allowPiloting": {
           "type": "boolean"
         },
+        "prisoner": {
+          "type": "string"
+        },
         "monthlyBuyLimit": {
           "type": "integer"
         },

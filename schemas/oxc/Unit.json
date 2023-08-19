@@ -63,6 +63,10 @@
     "capturable": {
       "type": "boolean"
     },
+    "specialObjective": {
+      "type": "integer",
+      "enum": [0, 1, 2]
+    },
     "builtInWeapons": {
       "deprecationMessage": "Deprecated: use \"builtInWeaponSets\" instead"
     },

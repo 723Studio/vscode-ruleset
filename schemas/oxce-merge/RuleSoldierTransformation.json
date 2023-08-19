@@ -64,6 +64,12 @@
       },
       "type": "array"
     },
+    "forbiddenRole": {
+      "type": "integer"
+    },
+    "addRole": {
+      "type": "integer"
+    },
     "requiredPreviousTransformations": {
       "items": {
         "type": "string"

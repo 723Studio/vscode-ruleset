@@ -28,6 +28,9 @@
     "master": {
       "type": "string"
     },
+    "requiredMasterModVersion": {
+      "type": "string"
+    },
     "reservedSpace": {
       "type": "integer"
     },

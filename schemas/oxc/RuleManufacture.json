@@ -28,6 +28,9 @@
     "cost": {
       "type": "integer"
     },
+    "stats": {
+      "$ref": "UnitStats.json"
+    },
     "requiredItems": {
       "additionalProperties": {
         "type": "integer"

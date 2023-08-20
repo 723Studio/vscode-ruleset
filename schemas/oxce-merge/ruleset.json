@@ -273,6 +273,9 @@
         "startingBaseSuperhuman": {
           "type": "object"
         },
+        "hiddenBase": {
+          "type": "object"
+        },
         "aimMultipliers": {
           "type": "array",
           "items": {

@@ -456,6 +456,9 @@
           },
           "type": "object"
         },
+        "spawnSoldier": {
+          "type": "string"
+        },
         "spawnUnit": {
           "type": "string"
         },

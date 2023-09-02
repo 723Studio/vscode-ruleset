@@ -36,7 +36,7 @@
         "stealth": {
           "type": "integer"
         },
-        "perseption": {
+        "perception": {
           "type": "integer"
         },
         "charisma": {

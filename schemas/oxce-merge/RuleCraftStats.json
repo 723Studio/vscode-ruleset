@@ -48,6 +48,9 @@
     },
     "shieldBleedThrough": {
       "type": "integer"
+    },
+    "engineCooldown": {
+      "type": "integer"
     }
   }
 }

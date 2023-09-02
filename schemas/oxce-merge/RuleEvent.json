@@ -94,6 +94,18 @@
     "interruptResearch": {
       "type": "string"
     },
+    "decreaseCounter": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "increaseCounter": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
     "timer": {
       "type": "integer"
     },

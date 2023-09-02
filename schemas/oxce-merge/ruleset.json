@@ -410,9 +410,12 @@
         "ftaGameLength": {
           "type": "integer"
         },
-		"ironManEnabled": {
-		  "type": "boolean"
-		},
+        "ironManEnabled": {
+          "type": "boolean"
+        },
+        "requiredExtendedVersion": {
+          "type": "string"
+        },
         "defaultFactionPowerCost": {
           "type": "integer"
         },

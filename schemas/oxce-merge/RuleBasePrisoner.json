@@ -60,6 +60,9 @@
             "spawnEvent": {
                 "type": "string"
             },
+            "isMultipleEventsPossible": {
+              "type": "boolean"
+          },
             "eventWeights": {
                 "$ref": "WeightedOptions.json#/definitions/Map"
               },

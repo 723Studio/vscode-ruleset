@@ -501,6 +501,9 @@
         "oneHandedPenalty": {
           "type": "integer"
         },
+        "canBeEquippedInBattle": {
+          "type": "boolean"
+        },
         "monthlyBuyLimit": {
           "type": "integer"
         },

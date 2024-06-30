@@ -99,6 +99,9 @@
         "alternativeDeployment": {
           "type": "string"
         },
+        "isHiddentXcomBase": {
+          "type": "boolean"
+        },
         "battleScript": {
           "type": "string"
         },

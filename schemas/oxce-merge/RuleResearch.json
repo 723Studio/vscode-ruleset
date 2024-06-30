@@ -57,6 +57,9 @@
           },
           "type": "array"
         },
+        "counterValue": {
+          "type": "integer"
+        },
         "requiresBaseFunc": {
           "items": {
             "type": "string"

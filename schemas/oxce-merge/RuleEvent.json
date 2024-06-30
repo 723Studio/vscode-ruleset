@@ -109,6 +109,9 @@
     "timer": {
       "type": "integer"
     },
+    "counterValue": {
+      "type": "integer"
+    },
     "timerRandom": {
       "type": "integer"
     },

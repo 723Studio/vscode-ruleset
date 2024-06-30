@@ -74,6 +74,12 @@
       "costs": {
         "type": "integer"
       },
+      "allowedRoles": {
+        "items": {
+          "type": "integer"
+        },
+        "type": "array"
+      },
       "progressEventChance": {
         "type": "integer"
       },
@@ -202,6 +208,12 @@
       },
       "armorEffect": {
         "type": "integer"
+      },
+      "addSoldiers": {
+        "additionalProperties": {
+          "type": "integer"
+        },
+        "type": "object"
       },
       "soldierTypeEffectiveness": {
         "additionalProperties": {

@@ -66,6 +66,9 @@
           },
           "type": "array"
         },
+        "eventWeights": {
+          "$ref": "WeightedOptions.json#/definitions/Map"
+        },
         "sequentialGetOneFree": {
           "type": "boolean"
         },

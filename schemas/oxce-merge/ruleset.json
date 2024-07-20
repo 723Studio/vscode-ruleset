@@ -276,6 +276,13 @@
         "hiddenBase": {
           "type": "object"
         },
+        "statGrowthMultipliersAbs": {
+          "type": "array",
+          "items": {
+            "$ref": "UnitStats.json"
+          },
+          "maxItems": 5
+        },
         "aimMultipliers": {
           "type": "array",
           "items": {
@@ -284,6 +291,13 @@
           "maxItems": 5
         },
         "armorMultipliers": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 5
+        },
+        "armorMultipliersAbs": {
           "type": "array",
           "items": {
             "type": "number"
@@ -776,6 +790,13 @@
           "type": "object",
           "additionalProperties": false,
           "properties": {
+            "extendedPediaFacilityParams": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              },
+              "maxItems": 4
+            },
             "extendedExperienceAwardSystem": {
               "type": "boolean"
             },
@@ -792,6 +813,9 @@
               "type": "boolean"
             },
             "extendedItemReloadCost": {
+              "type": "boolean"
+            },
+            "extendedInventorySlotSorting": {
               "type": "boolean"
             },
             "extendedRunningCost": {

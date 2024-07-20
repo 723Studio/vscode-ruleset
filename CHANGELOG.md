@@ -1,4 +1,6 @@
 # Change Log
+## [1.1.6]
+- Support of OXCE 7.10 new ruleset schemas.
 ## [1.1.5]
 - Support of FTA 1.3.5 new ruleset schemas.
 ## [1.1.4]

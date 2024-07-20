@@ -25,6 +25,12 @@
           },
           "type": "array"
         },
+        "maxUnitsLimit": {
+          "type": "integer"
+        },
+        "maxHWPUnitsLimit": {
+          "type": "integer"
+        },
         "pilots": {
           "type": "integer"
         },
@@ -57,6 +63,21 @@
         },
         "maxSkinIndex": {
           "type": "integer"
+        },
+        "groups": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "allowedSoldierGroups": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "onlyOneSoldierGroupAllowed": {
+          "type": "boolean"
         },
         "skinSprites": {
           "items": {
@@ -109,9 +130,6 @@
             "type": "string"
           }
         },
-        "maxStorageSpace": {
-          "type": "number"
-        },
         "shieldRechargedAtBase": {
           "type": "integer"
         },
@@ -123,6 +141,9 @@
         },
         "useAllStartTiles": {
           "type": "boolean"
+        },
+        "defaultAltitude": {
+          "type": "string"
         },
         "customPreview": {
           "type": "string"

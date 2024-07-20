@@ -9,6 +9,15 @@
         "refNode": {
           "$ref": "RuleBaseFacility.json"
         },
+        "sizeX": {
+          "type": "integer"
+        },
+        "sizeY": {
+          "type": "integer"
+        },
+        "spriteEnabled": {
+          "type": "boolean"
+        },
         "placeSound": {
           "$ref": "ModOffset.json"
         },
@@ -52,6 +61,12 @@
           "type": "integer"
         },
         "trainingRooms": {
+          "type": "integer"
+        },
+        "ammoMax": {
+          "type": "integer"
+        },
+        "rearmRate": {
           "type": "integer"
         },
         "ammoNeeded": {

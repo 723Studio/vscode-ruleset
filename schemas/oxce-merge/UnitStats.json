@@ -105,7 +105,7 @@
         "hacking": {
           "type": "integer"
         },
-        "construction": {
+        "robotics": {
           "type": "integer"
         },
         "diligence": {

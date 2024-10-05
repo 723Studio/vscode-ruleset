@@ -1,4 +1,6 @@
 # Change Log
+## [1.1.8]
+- Fix unit stats FTA scheme.
 ## [1.1.7]
 - Fix unit stats FTA scheme.
 ## [1.1.6]

@@ -107,23 +107,17 @@
       "failureFunds": {
         "type": "integer"
       },
-      "successEveryItemList": {
-        "additionalProperties": {
-          "type": "integer"
+      "successItemsNames": {
+        "items": {
+          "$ref": "#/definitions/RandomProductionItem"
         },
-        "type": "object"
+        "type": "array"
       },
-      "failureEveryItemList": {
-        "additionalProperties": {
-          "type": "integer"
+      "failureItemNames": {
+        "items": {
+          "$ref": "#/definitions/RandomProductionItem"
         },
-        "type": "object"
-      },
-      "successWeightedItemList": {
-        "$ref": "WeightedOptions.json"
-      },
-      "failureWeightedItemList": {
-        "$ref": "WeightedOptions.json"
+        "type": "array"
       },
       "successResearchList": {
         "items": {

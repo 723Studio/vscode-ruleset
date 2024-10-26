@@ -1,4 +1,6 @@
 # Change Log
+## [1.1.9]
+- Support of FTA 1.3.7 new ruleset schemas.
 ## [1.1.8]
 - Fix unit stats FTA scheme.
 ## [1.1.7]

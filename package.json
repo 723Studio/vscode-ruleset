@@ -2,7 +2,7 @@
     "name": "ruleset-tools",
     "displayName": "OpenXcom FTA Ruleset Tools",
     "description": "Validates YAML ruleset files for OpenXcom FTA",
-    "version": "1.1.9",
+    "version": "1.1.10",
     "publisher": "openxcomfta",
     "bugs": "https://github.com/723Studio/vscode-ruleset/issues",
     "repository": {
@@ -92,7 +92,7 @@
     "devDependencies": {
         "@types/glob": "^8.1.0",
         "@types/mocha": "^10.0.1",
-        "@types/node": "16.x",
+        "@types/node": "20.x",
         "@types/vscode": "^1.77.0",
         "@typescript-eslint/eslint-plugin": "^5.59.1",
         "@typescript-eslint/parser": "^5.59.1",

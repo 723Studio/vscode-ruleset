@@ -16,6 +16,9 @@
       "hackingDefence": {
         "type": "integer"
       },
+      "isMissionObjective": {
+        "type": "boolean"
+      },
       "alterationMCDNumber": {
         "type": "integer"
       },

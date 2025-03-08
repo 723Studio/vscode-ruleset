@@ -111,6 +111,9 @@
     "twoHanded": {
       "type": "boolean"
     },
+    "isCraftTurretAmmo": {
+      "type": "boolean"
+    },
     "waypoints": {
       "type": "integer"
     },

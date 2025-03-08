@@ -106,7 +106,7 @@
           "type": "string"
         },
         "extendedObjectiveType": {
-          "type": "string"
+          "type": "integer"
         },
         "undercoverArmors": {
           "items": {

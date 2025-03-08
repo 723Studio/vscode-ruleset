@@ -415,6 +415,27 @@
         "minReactionAccuracy": {
           "type": "integer"
         },
+        "researchTrainingFactor": {
+          "type": "integer"
+        },
+        "engineeringTrainingFactor": {
+          "type": "integer"
+        },
+        "intelTrainingFactor": {
+          "type": "integer"
+        },
+        "researchSpeedFactor": {
+          "type": "integer"
+        },
+        "engineeringSpeedFactor": {
+          "type": "integer"
+        },
+        "intelSpeedFactor": {
+          "type": "integer"
+        },
+        "prisonerActionsSpeedFactor": {
+          "type": "integer"
+        },
         "chanceToStopRetaliation": {
           "type": "integer"
         },

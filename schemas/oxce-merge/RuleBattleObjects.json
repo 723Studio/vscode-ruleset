@@ -4,14 +4,17 @@
     "type": "object",
     "additionalProperties": false,
     "required": [
-      "type"
+      "name"
     ],
     "properties": {
       "refNode": {
         "$ref": "RuleBattleObjects.json"
       },
-      "type": {
+      "name": {
         "type": "string"
+      },
+      "type": {
+        "type": "integer"
       },
       "hackingDefence": {
         "type": "integer"

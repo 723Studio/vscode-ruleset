@@ -1,4 +1,6 @@
 # Change Log
+## [1.1.12]
+- Support of FTA 1.3.19 new ruleset schemas.
 ## [1.1.11]
 - Support of FTA 1.3.16 new ruleset schemas.
 ## [1.1.10]

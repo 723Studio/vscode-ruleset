@@ -10,10 +10,10 @@
       "refNode": {
         "$ref": "RuleBattleObjects.json"
       },
-      "name": {
+      "type": {
         "type": "string"
       },
-      "type": {
+      "useType": {
         "type": "integer"
       },
       "hackingDefence": {

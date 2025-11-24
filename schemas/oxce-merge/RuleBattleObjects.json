@@ -4,7 +4,7 @@
     "type": "object",
     "additionalProperties": false,
     "required": [
-      "name"
+      "type"
     ],
     "properties": {
       "refNode": {

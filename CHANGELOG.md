@@ -1,4 +1,6 @@
 # Change Log
+## [1.1.14]
+- Hotfix.
 ## [1.1.13]
 - Support of FTA 1.3.20 new ruleset schemas.
 ## [1.1.12]

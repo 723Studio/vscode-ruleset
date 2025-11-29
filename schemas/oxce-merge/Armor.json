@@ -15,6 +15,12 @@
           },
           "type": "array"
         },
+        "allowedItemCategories": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
         "layersDefaultPrefix": {
           "type": "string"
         },
@@ -163,6 +169,9 @@
         },
         "meleeDodge": {
           "$ref": "RuleStatBonus.json"
+        },
+        "hackingDefense": {
+          "type": "integer"
         },
         "recovery": {
           "type": "object",

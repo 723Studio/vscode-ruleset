@@ -107,7 +107,7 @@
       "failureFunds": {
         "type": "integer"
       },
-      "successItemsNames": {
+      "successItemNames": {
         "items": {
           "$ref": "#/definitions/RandomProductionItem"
         },

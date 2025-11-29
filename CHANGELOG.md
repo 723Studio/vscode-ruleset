@@ -1,4 +1,6 @@
 # Change Log
+## [1.1.15]
+- Fix missing properties.
 ## [1.1.14]
 - Hotfix.
 ## [1.1.13]

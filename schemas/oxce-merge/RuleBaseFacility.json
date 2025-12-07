@@ -5,7 +5,17 @@
     },
     "with": {
       "$id": "https://openxcom.org/schemas/oxce/RuleBaseFacility.json",
+      "oneOf": [
+        { "$append": { "required": [ "new" ] } },
+        { "$append": { "required": [ "override" ] } },
+        { "$append": { "required": [ "update" ] } },
+        { "$append": { "required": [ "ignore" ] } }
+      ],
       "properties": {
+        "new": { "type": "string" },
+        "override": { "type": "string" },
+        "update": { "type": "string" },
+        "ignore": { "type": "string" },
         "refNode": {
           "$ref": "RuleBaseFacility.json"
         },
@@ -70,6 +80,12 @@
           "type": "integer"
         },
         "ammoNeeded": {
+          "type": "integer"
+        },
+        "unifiedDamageFormula": {
+          "type": "boolean"
+        },
+        "shieldDamageModifier": {
           "type": "integer"
         },
         "ammoItem": {
@@ -139,6 +155,9 @@
           "type": "integer"
         },
         "canBeBuiltOver": {
+          "type": "boolean"
+        },
+        "upgradeOnly": {
           "type": "boolean"
         },
         "buildOverFacilities": {

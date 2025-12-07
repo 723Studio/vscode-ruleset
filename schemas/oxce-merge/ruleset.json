@@ -47,6 +47,19 @@
             ]
           }
         },
+        "weaponSets": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/definitions/delete"
+              },
+              {
+                "$ref": "RuleWeaponSet.json"
+              }
+            ]
+          }
+        },
         "events": {
           "type": "array",
           "items": {
@@ -160,6 +173,19 @@
               },
               {
                 "$ref": "RuleIntelProject.json"
+              }
+            ]
+          }
+        },
+        "adhocScripts": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/definitions/delete"
+              },
+              {
+                "$ref": "RuleMissionScript.json"
               }
             ]
           }
@@ -413,7 +439,7 @@
           "type": "integer"
         },
         "minReactionAccuracy": {
-          "type": "integer"
+          "deprecationMessage": "Deprecated: use \"reactionFireThreshold\" and \"reactionFireThresholdCiv\" instead"
         },
         "researchTrainingFactor": {
           "type": "integer"
@@ -439,30 +465,6 @@
         "chanceToStopRetaliation": {
           "type": "integer"
         },
-        "ftaGame": {
-          "type": "boolean"
-        },
-        "ftaGameLength": {
-          "type": "integer"
-        },
-        "ironManEnabled": {
-          "type": "boolean"
-        },
-        "requiredExtendedVersion": {
-          "type": "string"
-        },
-        "defaultFactionPowerCost": {
-          "type": "integer"
-        },
-        "researchTreeDisabled": {
-          "type": "boolean"
-        },
-        "ufopaediaUnlockResearch": {
-          "type": "string"
-        },
-        "baseConstructionUnlockResearch": {
-          "type": "string"
-        },
         "lessAliensDuringBaseDefense": {
           "type": "boolean"
         },
@@ -470,6 +472,9 @@
           "type": "boolean"
         },
         "buildInfiltrationBaseCloseToTheCountry": {
+          "type": "boolean"
+        },
+        "infiltrateRandomCountryInTheRegion": {
           "type": "boolean"
         },
         "allowAlienBasesOnWrongTextures": {
@@ -497,24 +502,6 @@
           "type": "integer"
         },
         "noLOSAccuracyPenaltyGlobal": {
-          "type": "integer"
-        },
-        "hackingBaseTuCost": {
-          "type": "integer"
-        },
-        "hackingFirewallBaseTuCost": {
-          "type": "integer"
-        },
-        "hackingFirewallBaseHpCost": {
-          "type": "integer"
-        },
-        "hackingStatToTuCoef": {
-          "type": "integer"
-        },
-        "hackingStatToHpCoef": {
-          "type": "integer"
-        },
-        "visibilityStatsMod": {
           "type": "integer"
         },
         "surrenderMode": {
@@ -562,6 +549,9 @@
         },
         "pilotsEmergencyEvacuationSurvivalChance": {
           "type": "integer"
+        },
+        "showUfoPreviewInBaseDefense": {
+          "type": "boolean"
         },
         "soldiersPerSergeant": {
           "type": "integer"
@@ -619,7 +609,7 @@
           "type": "integer"
         },
         "performanceBonusFactor": {
-          "type": "integer"
+          "type": "number"
         },
         "enableNewResearchSorting": {
           "type": "boolean"
@@ -683,7 +673,7 @@
           },
           "additionalProperties": false,
           "type": "object"
-        }, 
+        },
         "loyaltyRatings": {
           "patternProperties": {
             "^-?\\d+$": {
@@ -763,6 +753,13 @@
           "type": "array",
           "maxItems": 5
         },
+        "buyPriceCoefficient": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array",
+          "maxItems": 5
+        },
         "difficultyBasedRetaliationDelay": {
           "items": {
             "type": "integer"
@@ -818,10 +815,19 @@
               },
               "maxItems": 4
             },
+            "extendedCurrencySymbol": {
+              "type": "string"
+            },
+            "extendedForceSpawn": {
+              "type": "boolean"
+            },
             "extendedExperienceAwardSystem": {
               "type": "boolean"
             },
             "extendedUnderwaterThrowFactor": {
+              "type": "integer"
+            },
+            "extendedSpotOnHitForSniping": {
               "type": "integer"
             },
             "extendedTerrainMelee": {
@@ -838,6 +844,9 @@
             },
             "extendedInventorySlotSorting": {
               "type": "boolean"
+            },
+            "extendedMovementCostRounding": {
+              "type": "integer"
             },
             "extendedRunningCost": {
               "type": "boolean"
@@ -1019,10 +1028,16 @@
             "useDelayGrenade": {
               "type": "integer"
             },
+            "aiUseDelayProxy": {
+              "type": "integer"
+            },
             "useDelayMelee": {
               "type": "integer"
             },
             "useDelayPsionic": {
+              "type": "integer"
+            },
+            "useDelayMedikit": {
               "type": "integer"
             },
             "fireChoiceIntelCoeff": {
@@ -1042,6 +1057,27 @@
             },
             "pickUpWeaponsMoreActivelyCiv": {
               "type": "boolean"
+            },
+            "reactionFireThreshold": {
+              "type": "integer"
+            },
+            "reactionFireThresholdCiv": {
+              "type": "integer"
+            },
+            "targetWeightThreatThreshold": {
+              "type": "integer"
+            },
+            "targetWeightAsHostile": {
+              "type": "integer"
+            },
+            "targetWeightAsHostileCivilians": {
+              "type": "integer"
+            },
+            "targetWeightAsFriendly": {
+              "type": "integer"
+            },
+            "targetWeightAsNeutral": {
+              "type": "integer"
             },
             "destroyBaseFacilities": {
               "type": "boolean"

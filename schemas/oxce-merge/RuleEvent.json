@@ -3,12 +3,26 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "name"
+  "oneOf": [
+    { "required": [ "name" ] },
+    { "required": [ "new" ] },
+    { "required": [ "override" ] },
+    { "required": [ "update" ] },
+    { "required": [ "ignore" ] }
   ],
   "properties": {
+    "new": { "type": "string" },
+    "override": { "type": "string" },
+    "update": { "type": "string" },
+    "ignore": { "type": "string" },
     "refNode": {
       "$ref": "RuleEvent.json"
+    },
+    "adhocMissionScriptTags": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
     },
     "name": {
       "type": "string"
@@ -23,6 +37,9 @@
       "type": "string"
     },
     "music": {
+      "type": "string"
+    },
+    "cutscene": {
       "type": "string"
     },
     "regionList": {
@@ -58,7 +75,16 @@
     "spawnedPersonName": {
       "type": "string"
     },
+    "invert": {
+      "type": "boolean"
+    },
     "everyMultiItemList": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "type": "object"
+    },
+    "everyMultiSoldierList": {
       "additionalProperties": {
         "type": "integer"
       },
@@ -71,6 +97,12 @@
       "type": "array"
     },
     "randomMultiItemList": {
+      "items": {
+        "$ref": "WeightedOptions.json"
+      },
+      "type": "array"
+    },
+    "randomMultiSoldierList": {
       "items": {
         "$ref": "WeightedOptions.json"
       },

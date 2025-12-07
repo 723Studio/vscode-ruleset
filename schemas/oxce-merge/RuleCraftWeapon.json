@@ -5,12 +5,25 @@
     },
     "with": {
       "$id": "https://openxcom.org/schemas/oxce/RuleCraftWeapon.json",
+      "oneOf": [
+        { "$append": { "required": [ "new" ] } },
+        { "$append": { "required": [ "override" ] } },
+        { "$append": { "required": [ "update" ] } },
+        { "$append": { "required": [ "ignore" ] } }
+      ],
       "properties": {
+        "new": { "type": "string" },
+        "override": { "type": "string" },
+        "update": { "type": "string" },
+        "ignore": { "type": "string" },
         "refNode": {
           "$ref": "RuleCraftWeapon.json"
         },
         "stats": {
           "$ref": "RuleCraftStats.json"
+        },
+        "unifiedDamageFormula": {
+          "type": "boolean"
         },
         "shieldDamageModifier": {
           "type": "integer"
@@ -20,6 +33,9 @@
         },
         "projectileSubType": {
           "type": "integer"
+        },
+        "tooltip": {
+          "type": "string"
         },
         "hidePediaInfo": {
           "type": "boolean"

@@ -12,9 +12,28 @@
     },
     "with": {
       "$id": "https://openxcom.org/schemas/oxce/RuleUfo.json",
+      "oneOf": [
+        { "$append": { "required": [ "new" ] } },
+        { "$append": { "required": [ "override" ] } },
+        { "$append": { "required": [ "update" ] } },
+        { "$append": { "required": [ "ignore" ] } }
+      ],
       "properties": {
+        "new": { "type": "string" },
+        "override": { "type": "string" },
+        "update": { "type": "string" },
+        "ignore": { "type": "string" },
         "refNode": {
           "$ref": "RuleUfo.json"
+        },
+        "radius": {
+          "type": "integer"
+        },
+        "visibility": {
+          "type": "integer"
+        },
+        "blobSize": {
+          "type": "integer"
         },
         "hunterKillerPercentage": {
           "type": "integer"
@@ -38,6 +57,9 @@
           "type": "integer"
         },
         "unmanned": {
+          "type": "boolean"
+        },
+        "instaHyper": {
           "type": "boolean"
         },
         "splashdownSurvivalChance": {

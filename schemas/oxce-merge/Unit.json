@@ -5,12 +5,28 @@
     },
     "with": {
       "$id": "https://openxcom.org/schemas/oxce/Unit.json",
+      "oneOf": [
+        { "$append": { "required": [ "new" ] } },
+        { "$append": { "required": [ "override" ] } },
+        { "$append": { "required": [ "update" ] } },
+        { "$append": { "required": [ "ignore" ] } }
+      ],
       "properties": {
+        "new": { "type": "string" },
+        "override": { "type": "string" },
+        "update": { "type": "string" },
+        "ignore": { "type": "string" },
         "refNode": {
           "$ref": "Unit.json"
         },
         "liveAlien": {
           "type": "string"
+        },
+        "weightedBuiltInWeaponSets": {
+          "items": {
+            "$ref": "WeightedOptions.json"
+          },
+          "type": "array"
         },
         "civilianRecoveryType": {
           "type": "string"

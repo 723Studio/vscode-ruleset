@@ -3,8 +3,8 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "type"
+  "oneOf": [
+    { "required": [ "type" ] }
   ],
   "properties": {
     "type": {
@@ -58,13 +58,15 @@
           "type": "string"
         },
         "count": {
-          "type": "integer"
+          "type": "integer",
+          "minimum": 0
         },
         "trajectory": {
           "type": "string"
         },
         "timer": {
-          "type": "integer"
+          "type": "integer",
+          "minimum": 0
         },
         "objective": {
           "type": "boolean"

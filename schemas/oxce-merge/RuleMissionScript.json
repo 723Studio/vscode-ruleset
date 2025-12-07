@@ -5,9 +5,25 @@
     },
     "with": {
       "$id": "https://openxcom.org/schemas/oxce/RuleMissionScript.json",
+      "oneOf": [
+        { "$append": { "required": [ "new" ] } },
+        { "$append": { "required": [ "override" ] } },
+        { "$append": { "required": [ "update" ] } },
+        { "$append": { "required": [ "ignore" ] } }
+      ],
       "properties": {
+        "new": { "type": "string" },
+        "override": { "type": "string" },
+        "update": { "type": "string" },
+        "ignore": { "type": "string" },
         "refNode": {
           "$ref": "RuleMissionScript.json"
+        },
+        "adhocMissionScriptTags": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
         },
         "maxDifficulty": {
           "type": "integer"
@@ -62,6 +78,12 @@
         },
         "allowedProcessor": {
           "type": "integer"
+        },
+        "soldierTypeTriggers": {
+          "additionalProperties": {
+            "type": "boolean"
+          },
+          "type": "object"
         },
         "xcomBaseInRegionTriggers": {
           "additionalProperties": {

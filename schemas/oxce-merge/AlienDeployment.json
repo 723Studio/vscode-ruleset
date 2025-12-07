@@ -5,7 +5,17 @@
     },
     "with": {
       "$id": "https://openxcom.org/schemas/oxce/AlienDeployment.json",
+      "oneOf": [
+        { "$append": { "required": [ "new" ] } },
+        { "$append": { "required": [ "override" ] } },
+        { "$append": { "required": [ "update" ] } },
+        { "$append": { "required": [ "ignore" ] } }
+      ],
       "properties": {
+        "new": { "type": "string" },
+        "override": { "type": "string" },
+        "update": { "type": "string" },
+        "ignore": { "type": "string" },
         "refNode": {
           "$ref": "AlienDeployment.json"
         },
@@ -13,6 +23,12 @@
           "type": "boolean"
         },
         "isHiddenAlienBase": {
+          "type": "boolean"
+        },
+        "forcePercentageOutsideUfo": {
+          "type": "boolean"
+        },
+        "noWeaponPile": {
           "type": "boolean"
         },
         "fakeUnderwaterSpawnChance": {
@@ -26,6 +42,9 @@
         },
         "vipSurvivalPercentage": {
           "type": "integer"
+        },
+        "ignoreLivingCivilians": {
+          "type": "boolean"
         },
         "markCiviliansAsVIP": {
           "type": "boolean"
@@ -142,7 +161,7 @@
           "type": "string"
         },
         "alertSound": {
-          "type": "integer"
+          "$ref": "ModOffset.json"
         },
         "keepCraftAfterFailedMission": {
           "type": "boolean"
@@ -182,6 +201,17 @@
         },
         "huntMissionWeights": {
           "$ref": "WeightedOptions.json#/definitions/Map"
+        },
+        "alienRaceEvolution": {
+          "items": {
+            "items": {
+              "type": [ "integer", "string" ]
+            },
+            "minItems": 3,
+            "maxItems": 3,
+            "type": "array"
+          },
+          "type": "array"
         },
         "resetAlienBaseAgeAfterUpgrade": {
           "type": "boolean"

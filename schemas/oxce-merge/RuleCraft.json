@@ -12,7 +12,17 @@
     },
     "with": {
       "$id": "https://openxcom.org/schemas/oxce/RuleCraft.json",
+      "oneOf": [
+        { "$append": { "required": [ "new" ] } },
+        { "$append": { "required": [ "override" ] } },
+        { "$append": { "required": [ "update" ] } },
+        { "$append": { "required": [ "ignore" ] } }
+      ],
       "properties": {
+        "new": { "type": "string" },
+        "override": { "type": "string" },
+        "update": { "type": "string" },
+        "ignore": { "type": "string" },
         "refNode": {
           "$ref": "RuleCraft.json"
         },
@@ -30,6 +40,15 @@
         },
         "maxHWPUnitsLimit": {
           "type": "integer"
+        },
+        "pilotMinStatsRequired": {
+          "$ref": "UnitStats.json"
+        },
+        "pilotSoldierBonusesRequired": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
         },
         "pilots": {
           "type": "integer"
@@ -62,6 +81,12 @@
           "type": "integer"
         },
         "groups": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "allowedArmorGroups": {
           "items": {
             "type": "integer"
           },
@@ -132,6 +157,9 @@
         },
         "forceShowInMonthlyCosts": {
           "type": "boolean"
+        },
+        "missilePower": {
+          "type": "integer"
         },
         "monthlyBuyLimit": {
           "type": "integer"

@@ -5,7 +5,17 @@
     },
     "with": {
       "$id": "https://openxcom.org/schemas/oxce/RuleItem.json",
+      "oneOf": [
+        { "$append": { "required": [ "new" ] } },
+        { "$append": { "required": [ "override" ] } },
+        { "$append": { "required": [ "update" ] } },
+        { "$append": { "required": [ "ignore" ] } }
+      ],
       "properties": {
+        "new": { "type": "string" },
+        "override": { "type": "string" },
+        "update": { "type": "string" },
+        "ignore": { "type": "string" },
         "refNode": {
           "$ref": "RuleItem.json"
         },
@@ -14,6 +24,9 @@
         },
         "nameAsAmmo": {
           "type": "string"
+        },
+        "vehicleFixedAmmoSlot": {
+          "type": "integer"
         },
         "requires": {
           "items": {
@@ -162,6 +175,9 @@
         "unprimeActionMessage": {
           "type": "string"
         },
+        "sellActionMessage": {
+          "type": "string"
+        },
         "fuseType": {
           "type": "integer",
           "minimum": -3,
@@ -172,7 +188,7 @@
         },
         "hiddenOnMinimap": {
           "type": "boolean"
-        }, 
+        },
         "alienArtifact": {
           "type": "boolean"
         },
@@ -378,7 +394,12 @@
           "type": "boolean"
         },
         "isExplodingInHands": {
-          "type": "boolean"
+          "deprecationMessage": "Deprecated: use \"explodeInventory\" instead"
+        },
+        "explodeInventory": {
+          "type": "integer",
+          "minimum": -1,
+          "maximum": 2
         },
         "specialUseEmptyHand": {
           "type": "boolean"
@@ -430,6 +451,9 @@
           "maximum": 32
         },
         "manaExperience": {
+          "type": "integer"
+        },
+        "loadOrder": {
           "type": "integer"
         },
         "shotgunBehavior": {
@@ -487,7 +511,7 @@
           "type": "integer"
         },
         "vaporColorSurface": {
-          "type": "integer"
+          "$ref": "ModOffset.json"
         },
         "vaporDensitySurface": {
           "type": "integer"
@@ -549,6 +573,15 @@
         "underwaterThrowRange": {
           "type": "integer"
         },
+        "throwDropoffRange": {
+          "type": "integer"
+        },
+        "underwaterThrowDropoffRange": {
+          "type": "integer"
+        },
+        "throwDropoff": {
+          "type": "integer"
+        },
         "psiRequired": {
           "type": "boolean"
         },
@@ -563,6 +596,9 @@
         },
         "coneSize": {
           "type": "integer"
+        },
+        "ignoreAmmoPower": {
+          "type": "boolean"
         },
         "tags": {
           "type": "object"
@@ -673,6 +709,15 @@
               "type": "string"
             },
             "ammoSlot": {
+              "type": "integer"
+            },
+            "ammoZombieUnitChanceOverride": {
+              "type": "integer"
+            },
+            "ammoSpawnUnitChanceOverride": {
+              "type": "integer"
+            },
+            "ammoSpawnItemChanceOverride": {
               "type": "integer"
             },
             "arcing": {

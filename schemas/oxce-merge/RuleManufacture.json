@@ -5,7 +5,17 @@
     },
     "with": {
       "$id": "https://openxcom.org/schemas/oxce/RuleManufacture.json",
+      "oneOf": [
+        { "$append": { "required": [ "new" ] } },
+        { "$append": { "required": [ "override" ] } },
+        { "$append": { "required": [ "update" ] } },
+        { "$append": { "required": [ "ignore" ] } }
+      ],
       "properties": {
+        "new": { "type": "string" },
+        "override": { "type": "string" },
+        "update": { "type": "string" },
+        "ignore": { "type": "string" },
         "refNode": {
           "$ref": "RuleManufacture.json"
         },
@@ -13,6 +23,14 @@
           "items": {
             "type": "string"
           },
+          "type": "array"
+        },
+        "transferTimes": {
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 0,
+          "maxItems": 3,
           "type": "array"
         },
         "points": {

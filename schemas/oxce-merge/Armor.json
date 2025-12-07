@@ -21,6 +21,12 @@
           },
           "type": "array"
         },
+        "forbiddenItemCategories": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
         "layersDefaultPrefix": {
           "type": "string"
         },

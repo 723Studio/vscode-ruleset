@@ -34,9 +34,6 @@
         "pilots": {
           "type": "integer"
         },
-        "requiredRole": {
-          "type": "integer"
-        },
         "maxSmallSoldiers": {
           "type": "integer"
         },

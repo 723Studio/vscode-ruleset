@@ -96,12 +96,6 @@
       },
       "type": "object"
     },
-    "pactCountryTriggers": {
-      "additionalProperties": {
-        "type": "boolean"
-      },
-      "type": "object"
-    },
     "xcomBaseInRegionTriggers": {
       "additionalProperties": {
         "type": "boolean"

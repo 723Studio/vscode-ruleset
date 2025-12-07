@@ -112,6 +112,19 @@
             ]
           }
         },
+        "adhocScripts": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/definitions/delete"
+              },
+              {
+                "$ref": "RuleMissionScript.json"
+              }
+            ]
+          }
+        },
         "diplomacyFactionEvents": {
           "type": "array",
           "items": {
@@ -173,19 +186,6 @@
               },
               {
                 "$ref": "RuleIntelProject.json"
-              }
-            ]
-          }
-        },
-        "adhocScripts": {
-          "type": "array",
-          "items": {
-            "oneOf": [
-              {
-                "$ref": "#/definitions/delete"
-              },
-              {
-                "$ref": "RuleMissionScript.json"
               }
             ]
           }
@@ -465,6 +465,33 @@
         "chanceToStopRetaliation": {
           "type": "integer"
         },
+        "ftaGame": {
+          "type": "boolean"
+        },
+        "ftaGameLength": {
+          "type": "integer"
+        },
+        "ironManEnabled": {
+          "type": "boolean"
+        },
+        "requiredExtendedVersion": {
+          "type": "string"
+        },
+        "defaultFactionPowerCost": {
+          "type": "integer"
+        },
+        "researchTreeDisabled": {
+          "type": "boolean"
+        },
+        "ufopaediaUnlockResearch": {
+          "type": "string"
+        },
+        "baseConstructionUnlockResearch": {
+          "type": "string"
+        },
+        "chanceToDetectAlienBaseEachMonth": {
+          "type": "integer"
+        },
         "lessAliensDuringBaseDefense": {
           "type": "boolean"
         },
@@ -502,6 +529,27 @@
           "type": "integer"
         },
         "noLOSAccuracyPenaltyGlobal": {
+          "type": "integer"
+        },
+        "hackingBaseTuCost": {
+          "type": "integer"
+        },
+        "hackingFirewallBaseTuCost": {
+          "type": "integer"
+        },
+        "hackingFirewallBaseHpCost": {
+          "type": "integer"
+        },
+        "hackingStatToTuCoef": {
+          "type": "integer"
+        },
+        "hackingStatToHpCoef": {
+          "type": "integer"
+        },
+        "visibilityStatsMod": {
+          "type": "integer"
+        },
+        "explodeInventoryGlobal": {
           "type": "integer"
         },
         "surrenderMode": {
